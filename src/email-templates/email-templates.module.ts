@@ -7,7 +7,7 @@ import { EmailTemplate } from './email-template.entity';
 
 @Module({
   imports: [TypeOrmModule.forFeature([EmailTemplate])],
-  exports: [EmailTemplateService],  // make service available for other modules
+  exports: [EmailTemplateService],  
   controllers: [EmailTemplateController],
   providers: [EmailTemplateService]
 })
